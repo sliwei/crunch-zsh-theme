@@ -13,19 +13,19 @@
 # Colors are at the top so you can mess with those separately if you like.
 # For the most part I stuck with Dallas's.
 
-CRUNCH_BRACKET_COLOR="%{$fg[white]%}"
-CRUNCH_TIME_COLOR="$fg[yellow]"
-CRUNCH_RVM_COLOR="%{$fg[magenta]%}"
-CRUNCH_DIR_COLOR="%{$fg[cyan]%}"
-CRUNCH_GIT_BRANCH_COLOR="%{$fg[green]%}"
-CRUNCH_GIT_CLEAN_COLOR="%{$fg[green]%}"
-CRUNCH_GIT_DIRTY_COLOR="%{$fg[red]%}"
+CRUNCH_BRACKET_COLOR="%{$fg_bold[white]%}"
+CRUNCH_TIME_COLOR="$fg_bold[yellow]"
+CRUNCH_RVM_COLOR="%{$fg_bold[magenta]%}"
+CRUNCH_DIR_COLOR="%{$fg_bold[cyan]%}"
+CRUNCH_GIT_BRANCH_COLOR="%{$fg_bold[green]%}"
+CRUNCH_GIT_CLEAN_COLOR="%{$fg_bold[green]%}"
+CRUNCH_GIT_DIRTY_COLOR="%{$fg_bold[red]%}"
 
 # These Git variables are used by the oh-my-zsh git_prompt_info helper:
 ZSH_THEME_GIT_PROMPT_PREFIX="$CRUNCH_BRACKET_COLOR:$CRUNCH_GIT_BRANCH_COLOR"
 ZSH_THEME_GIT_PROMPT_SUFFIX=""
-ZSH_THEME_GIT_PROMPT_CLEAN=" $CRUNCH_GIT_CLEAN_COLOR✓"
-ZSH_THEME_GIT_PROMPT_DIRTY=" $CRUNCH_GIT_DIRTY_COLOR✗"
+ZSH_THEME_GIT_PROMPT_CLEAN="$CRUNCH_GIT_CLEAN_COLOR ✔"
+ZSH_THEME_GIT_PROMPT_DIRTY="$CRUNCH_GIT_DIRTY_COLOR ✘"
 
 # Our elements:
 CRUNCH_TIME_="$CRUNCH_BRACKET_COLOR$CRUNCH_TIME_COLOR%T$CRUNCH_BRACKET_COLOR%{$reset_color%} "
